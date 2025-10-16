@@ -1,14 +1,11 @@
-from asyncio import Condition
-
-
-animals = ["dog", "cat", "bird"]
-animals[2] = "fish"
-animals.append("horse")
-animals.extend(["cow", "sheep"])
-animals += ["pig", "goat"]
-animals.remove("dog")
-animals.insert(0, "ragnar")
-animals.pop()
+# animals = ["dog", "cat", "bird"]
+# animals[2] = "fish"
+# animals.append("horse")
+# animals.extend(["cow", "sheep"])
+# animals += ["pig", "goat"]
+# animals.remove("dog")
+# animals.insert(0, "ragnar")
+# animals.pop()
 # print(animals)
 
 
@@ -17,21 +14,21 @@ animals.pop()
 # tuples, sets, dictionaries and list
 
 # list
-animals =  ["dog", "cat", "mouse", "bird", "snake", "turtle", "fish", "lizard", "frog", "toad"]
-# print(animals)
+# animals =  ["dog", "cat", "mouse", "bird", "snake", "turtle", "fish", "lizard", "frog", "toad"]
+# # print(animals)
 
-# tuple
-animals_tuple = ("dog", "cat", "mouse", "bird", "snake", "turtle", "fish", "lizard", "frog", "toad")
-# print(animals_tuple)
+# # tuple
+# animals_tuple = ("dog", "cat", "mouse", "bird", "snake", "turtle", "fish", "lizard", "frog", "toad")
+# # print(animals_tuple)
 
-# set
-animals_set = {"dog", "cat", "mouse", "bird", "snake", "turtle", "fish", "lizard", "frog", "toad"}
-animals_set2 = {"dog", "cat"}
-mod = animals_set < animals_set2
-# print(mod)
+# # set
+# animals_set = {"dog", "cat", "mouse", "bird", "snake", "turtle", "fish", "lizard", "frog", "toad"}
+# animals_set2 = {"dog", "cat"}
+# mod = animals_set < animals_set2
+# # print(mod)
 
-# dictionary
-names = {"first_name": "John", "last_name": "Doe", "age": 30, "city": "New York"}
+# # dictionary
+# names = {"first_name": "John", "last_name": "Doe", "age": 30, "city": "New York"}
 # print(names)
 
 
@@ -45,9 +42,9 @@ names = {"first_name": "John", "last_name": "Doe", "age": 30, "city": "New York"
 # names_of_people = greet("Jane is a good girl")
 
 
-def name_age(name, age):
-    print(f"Hello, {name}! You are {age} years old.")
-    # return name, age
+# def name_age(name, age):
+#     print(f"Hello, {name}! You are {age} years old.")
+#     # return name, age
 
 # name_age("Moses", 20)
 # name_age("John", 21)
@@ -150,18 +147,47 @@ def name_age(name, age):
 # for index, item in enumerate(items):
 #    print(index, item)
 
-items = [1,2,3,4,5]
-for item in items:
-   if item == 3:
-      break
-   print(item)
+# items = [1,2,3,4,5]
+# for item in items:
+#    if item == 3:
+#       break
+#    print(item)
+
+# items = [1,2,3,4,5]
+# for item in items:
+#    if item == 3:
+#       continue
+#    print(item)
 
 
+# classes
+
+# one important thing about class is the ability to inherit
+# examole
+
+from os import walk
 
 
+class Animals:
+   def walk(self):
+      print("walking.....")
 
 
+class Dog(Animals):
+   def __init__(self, name, age):
+      self.name = name
+      self.age = age
 
+   def barking(self):
+      print("wooof")
+      return
+
+
+ragnar = Dog("German Shepherd", 100)
+print(ragnar.name)
+print(ragnar.age)
+ragnar.barking()
+ragnar.walk()
 
 
 
