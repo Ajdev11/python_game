@@ -69,16 +69,35 @@ def name_age(name, age):
 # print(f"i think {result} ")
 
 
-def userAge():
-   choice = int(input("Enter your age: "))
-   return choice
-age = userAge()
-if age >= 18:
-   print(f"Your age is {age}, you are an adult")
-elif age <= 18:
-    print(f"Your age is {age}. you are a minor")
-else:
-   print("enter a valid age")
+# def userAge():
+#    choice = int(input("Enter your age: "))
+#    return choice
+# age = userAge()
+# if age >= 18:
+#    print(f"Your age is {age}, you are an adult")
+# elif age <= 18:
+#     print(f"Your age is {age}. you are a minor")
+# else:
+#    print("enter a valid age")
+
+
+# nested function 
+# def count():
+#    count = 0
+#    def increment():
+#       nonlocal count
+#       count = count + 10000
+#       print(count)
+#    return increment()
+
+
+age = 9
+def ageCount():
+    print(age)
+   
+result = ageCount()
+
+
 
 
 
