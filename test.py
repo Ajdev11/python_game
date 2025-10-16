@@ -1,3 +1,6 @@
+from asyncio import Condition
+
+
 animals = ["dog", "cat", "bird"]
 animals[2] = "fish"
 animals.append("horse")
@@ -90,12 +93,68 @@ def name_age(name, age):
 #       print(count)
 #    return increment()
 
+# global variable
 
-age = 9
-def ageCount():
-    print(age)
+# age = 9
+# def ageCount():
+
+#     print(age)
    
-result = ageCount()
+# result = ageCount()
+
+# objects
+
+# items = [1,2]
+# items.append(3)
+# print(items)
+
+
+# loops
+
+# while loops
+
+# Condition = True
+# while Condition == True:
+#    print("condition is true")
+#    Condition = False
+
+# count = 0
+# while count < 20:
+#    print("Condition is true")
+#    count = count + 1
+#    # count += 1
+# print("It is done iterating")
+
+
+# for loops (commonlybused to iterate an item in a list)
+
+# wildAnimals = ["lion", "monkey", "tiger", "bear", "snakes", "humans"]
+# for index, animals in enumerate(wildAnimals):
+   
+#    print(index, animals)
+
+# for num in range(40):
+#    print(num)
+
+
+# items = [1,2,3,4,5]
+
+# for item in items:
+#    print(item)
+
+# to get the indec of this items we can also say
+
+
+# items = [1,2,3,4,5]
+
+# for index, item in enumerate(items):
+#    print(index, item)
+
+items = [1,2,3,4,5]
+for item in items:
+   if item == 3:
+      break
+   print(item)
 
 
 
