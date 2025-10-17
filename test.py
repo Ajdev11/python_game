@@ -165,29 +165,66 @@
 # one important thing about class is the ability to inherit
 # examole
 
-from os import walk
+
+# class Animals:
+#    def walk(self):
+#       print("walking.....")
 
 
-class Animals:
-   def walk(self):
-      print("walking.....")
+# class Dog(Animals):
+#    def __init__(self, name, age):
+#       self.name = name
+#       self.age = age
+
+#    def barking(self):
+#       print("wooof")
+#       return
 
 
-class Dog(Animals):
-   def __init__(self, name, age):
-      self.name = name
-      self.age = age
-
-   def barking(self):
-      print("wooof")
-      return
+# ragnar = Dog("German Shepherd", 100)
+# print(ragnar.name)
+# print(ragnar.age)
+# ragnar.barking()
+# ragnar.walk()
 
 
-ragnar = Dog("German Shepherd", 100)
-print(ragnar.name)
-print(ragnar.age)
-ragnar.barking()
-ragnar.walk()
+# modules
+# every pythin file is a module
+
+# lambda function
+import numbers
+from tokenize import Double
+
+
+# lambda num: num * 2
+# multiply = lambda a, b: a * b
+# print(multiply(2, 4))
+
+# map, filter and reduce
+numbers = [4, 6, 9]
+
+result = map(lambda g: g * 5, numbers)
+print(list(result))
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
