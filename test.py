@@ -201,12 +201,15 @@ from tokenize import Double
 # print(multiply(2, 4))
 
 # map, filter and reduce
-numbers = [4, 6, 9]
+# numbers = [4, 6, 9]
+# # double = lambda g: g * 5
+# result = map(lambda g: g * 5, numbers)
+# print(list(result))
 
-result = map(lambda g: g * 5, numbers)
+# filter 
+numbers = [2, 4, 6, 8, 10]
+result = filter(lambda n: n % 2==0, numbers)
 print(list(result))
-
-
 
 
 
