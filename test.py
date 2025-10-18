@@ -192,8 +192,8 @@
 # every pythin file is a module
 
 # lambda function
-import numbers
-from tokenize import Double
+# import numbers
+# from tokenize import Double
 
 
 # lambda num: num * 2
@@ -207,9 +207,18 @@ from tokenize import Double
 # print(list(result))
 
 # filter 
-numbers = [2, 4, 6, 8, 10]
-result = filter(lambda n: n % 2==0, numbers)
-print(list(result))
+# numbers = [2, 4, 6, 8, 10]
+# result = filter(lambda n: n % 2==0, numbers)
+# print(list(result))
+
+# reduce
+# reduce is used tocalculate a value out of a sequence 
+from functools import reduce
+
+expenses = [("dinner", 90), ("breakfast", 120)]
+
+sum = reduce(lambda a,b: a[1] + b[1], expenses)
+print(sum)
 
 
 
