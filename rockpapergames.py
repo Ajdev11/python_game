@@ -24,8 +24,6 @@ choice = get_choices()
 result = check_win(choice["player"], choice["computer"])
 # print(result)
 
-dogs= []
-print(moses in dogs)
 
 
 

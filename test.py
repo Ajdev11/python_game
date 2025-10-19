@@ -213,12 +213,13 @@
 
 # reduce
 # reduce is used tocalculate a value out of a sequence 
-from functools import reduce
+# from functools import reduce
 
-expenses = [("dinner", 90), ("breakfast", 120)]
+# expenses = [("dinner", 90), ("breakfast", 120)]
 
-sum = reduce(lambda a,b: a[1] + b[1], expenses)
-print(sum)
+# sum = reduce(lambda a,b: a[1] + b[1], expenses)
+# print(sum)
+
 
 
 
