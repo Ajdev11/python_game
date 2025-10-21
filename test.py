@@ -220,18 +220,18 @@
 # sum = reduce(lambda a,b: a[1] + b[1], expenses)
 # print(sum)
 
-from sre_parse import RANGE
+# from sre_parse import RANGE
 
 
-total_num = 0
-for numbers in range(0, 6):
-    total_num = total_num + numbers
+# total_num = 0
+# for numbers in range(0, 6):
+#     total_num = total_num + numbers
 
-print(total_num)
+# print(total_num)
 
-song = "Arrest the man who sang the song"
-for i in range(0, 6):
-    print(song)
+# song = "Arrest the man who sang the song"
+# for i in range(0, 6):
+#     print(song)
 
 
 
