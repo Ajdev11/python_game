@@ -22,7 +22,15 @@ def check_win(player, computer):
 
 choice = get_choices()
 result = check_win(choice["player"], choice["computer"])
-# print(result)
+print(result)
+
+# key topics to knwo in python
+# variable
+# data types
+# conitional statement 
+# functions
+# loops - for and while loops
+# maps, filter and reduce 
 
 
 

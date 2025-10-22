@@ -200,19 +200,19 @@
 # multiply = lambda a, b: a * b
 # print(multiply(2, 4))
 
-# map, filter and reduce
+# # map, filter and reduce
 # numbers = [4, 6, 9]
 # # double = lambda g: g * 5
 # result = map(lambda g: g * 5, numbers)
 # print(list(result))
 
-# filter 
+# # filter 
 # numbers = [2, 4, 6, 8, 10]
 # result = filter(lambda n: n % 2==0, numbers)
 # print(list(result))
 
-# reduce
-# reduce is used tocalculate a value out of a sequence 
+# # reduce
+# # reduce is used tocalculate a value out of a sequence 
 # from functools import reduce
 
 # expenses = [("dinner", 90), ("breakfast", 120)]

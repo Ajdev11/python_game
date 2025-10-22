@@ -1,7 +1,4 @@
-suite = ["spades", "clubs", "Hearts", "Diamond"]
-rank = "K"
-value = 10
-
-# print("Your card is: ")
-# print(rank)
-print("Your card is: " + rank + " of" + suite)
+suits = ["spades", "clubs", "Hearts", "Diamond"]
+ranks = ["A", 2, 3, 4, 5, 6, 7, 8, 9, 10, "J", "Q", "K"]
+for suit in suits:
+    print(suit)
