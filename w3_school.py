@@ -70,3 +70,27 @@ my_name_is = 'Moses Ogunsemore'
 import random
 
 print(random.randrange(1, 10))
+
+# string
+
+name = "Hello wolrd"
+
+# for loop
+# slicing
+for x in name:
+    print(x)
+    print(x[: 5])
+    print(x[2:6])
+    print(x.upper())
+# concatenation or combining 
+
+a = 5
+b= 10
+c= a + b
+print(c)
+
+# f string, used for formatting strings
+
+age = 600
+text = f"my name is Moses and i am  {age} years old"
+print(text)
