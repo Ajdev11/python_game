@@ -94,3 +94,18 @@ print(c)
 age = 600
 text = f"my name is Moses and i am  {age} years old"
 print(text)
+
+# boolean representr one or two values
+
+print(10 > 9)
+print(9 < 4)
+
+# another example will be 
+
+a = 400
+b = 50
+
+if a > b:
+    print("A is GREATER than B")
+else:
+    print("check again")
