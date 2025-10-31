@@ -124,6 +124,8 @@ if count > 3:
 # Dictionary is a collection which is ordered** and changeable. No duplicate members.
 
 
+
+# List is a collection which is ordered and changeable. Allows duplicate members.
 # list
 thislist = ["apple", "banana", "cherry", "apple", "cherry"]
 thislist[0] = ['Grapes']
@@ -148,3 +150,77 @@ thislist = ["apple", "banana", "cherry"]
 tropical = ["mango", "pineapple", "papaya"]
 thislist.extend(tropical)
 print(thislist)
+
+# loop list
+# for loop is used to loop tyhrough items in a list and the list are dosplayed one after the other 
+
+thislist = ["apple", "banana", "cherry"]
+for x in thislist:
+    print(x)
+
+
+# while loop is more condtional, the statement has to be TRUE for the block of code to RUN 
+
+thislist = ["apple", "banana", "cherry"]
+i = 0
+
+while i < len(thislist):
+    print(thislist[i])
+    i += 1
+
+# Looping Using List Comprehension
+# List Comprehension offers the shortest syntax for looping through lists:
+#  short hand form of using or loops, in this we add the [] to cover the print the statement and the ew variable in ()
+thislist = ["apple", "banana", "cherry", "Watermelon"]
+[print(x) for x in thislist]
+
+
+# to print a newlist that contains certain elements
+fruits = ["apple", "banana", "cherry", "Watermelon"]
+newList = []
+
+for x in fruits:
+    if "a" in x:
+        newList.append(x)
+
+print(newList)
+
+
+# Sort the list alphabetically:
+
+thislist = ["orange", "mango", "kiwi", "pineapple", "banana"]
+thislist.sort()
+print(thislist)
+
+
+# Sort the list numerically:
+
+thislist = [100, 50, 65, 82, 23]
+thislist.sort()
+print(thislist)
+
+
+# Sort the list descending:
+
+thislist = ["orange", "mango", "kiwi", "pineapple", "banana"]
+thislist.sort(reverse = True)
+print(thislist)
+
+# Join two list:
+
+list1 = ["a", "b", "c"]
+list2 = [1, 2, 3]
+
+list3 = list1 + list2
+print(list3)
+
+
+# or we can use the extend method
+
+list1 = ["a", "b", "c"]
+list2 = [1, 2, 3]
+
+list1.extend(list2)
+print(list1)
+
+# A tuple is a collection which is ordered and unchangeable.
