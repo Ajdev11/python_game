@@ -68,6 +68,7 @@ my_name_is = 'Moses Ogunsemore'
 
 
 import random
+import this
 
 print(random.randrange(1, 10))
 
@@ -109,3 +110,41 @@ if a > b:
     print("A is GREATER than B")
 else:
     print("check again")
+
+
+numbers = [1, 2, 3, 4, 5]
+
+count = len(numbers)
+if count > 3:
+    print(f"The number of list is {count}")
+
+# List is a collection which is ordered and changeable. Allows duplicate members.
+# Tuple is a collection which is ordered and unchangeable. Allows duplicate members.
+# Set is a collection which is unordered, unchangeable*, and unindexed. No duplicate members.
+# Dictionary is a collection which is ordered** and changeable. No duplicate members.
+
+
+# list
+thislist = ["apple", "banana", "cherry", "apple", "cherry"]
+thislist[0] = ['Grapes']
+thislist.insert(1, "Mango")
+if 'apple' in thislist:
+    print("YES i am Present in this list")
+else:
+    print('I have been replaced by something else')
+print(thislist)
+print(len(thislist))
+print(type(thislist))
+print(thislist[2:4])
+print(thislist[:4])
+
+# append is use to add an item to the end of the list
+thislist = ["apple", "banana", "cherry"]
+thislist.append("orange")
+print(thislist)
+
+# to extend the items from another list 
+thislist = ["apple", "banana", "cherry"]
+tropical = ["mango", "pineapple", "papaya"]
+thislist.extend(tropical)
+print(thislist)
