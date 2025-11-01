@@ -224,3 +224,4 @@ list1.extend(list2)
 print(list1)
 
 # A tuple is a collection which is ordered and unchangeable.
+
