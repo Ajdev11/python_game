@@ -259,6 +259,306 @@ thistuple = tuple(y)
 
 # The del keyword can delete the tuple completely:
 
+# thistuple = ("apple", "banana", "cherry")
+# del thistuple
+# print(thistuple) 
+#this will raise an error because the tuple no longer exists
+
+# Unpacking a tuple:
+
+fruits = ("apple", "banana", "cherry")
+
+(green, yellow, red) = fruits
+
+print(green)
+print(yellow)
+print(red)
+
+# Unpacking a tuple:
+
+fruits = ("apple", "banana", "cherry")
+
+(green, yellow, red) = fruits
+
+print(green)
+print(yellow)
+print(red)
+
+# Print all items, using a while loop to go through all the index numbers:
+
 thistuple = ("apple", "banana", "cherry")
-del thistuple
-print(thistuple) #this will raise an error because the tuple no longer exists
+i = 0
+while i < len(thistuple):
+  print(thistuple[i])
+  i += 1
+
+# Join two tuples:
+
+tuple1 = ("a", "b" , "c")
+tuple2 = (1, 2, 3)
+
+tuple3 = tuple1 + tuple2
+print(tuple3)
+
+# Join two tuples:
+
+tuple1 = ("a", "b" , "c")
+tuple2 = (1, 2, 3)
+
+tuple3 = tuple1 + tuple2
+print(tuple3)
+
+# Sets are used to store multiple items in a single variable.
+
+# Set is one of 4 built-in data types in Python used to store collections of data, the other 3 are List, Tuple, and Dictionary, all with different qualities and usage.
+
+# A set is a collection which is unordered, unchangeable*, and unindexed.
+
+# Create a Set:
+
+thisset = {"apple", "banana", "cherry"}
+print(thisset)
+
+# Once a set is created, you cannot change its items, but you can remove items and add new items.
+thisset = {"apple", "banana", "cherry", "apple"}
+
+print(thisset)
+
+# Loop through the set, and print the values:
+
+thisset = {"apple", "banana", "cherry"}
+
+for x in thisset:
+  print(x)
+
+# Check if "banana" is present in the set:
+
+thisset = {"apple", "banana", "cherry"}
+
+print("banana" in thisset)
+
+# Check if "banana" is NOT present in the set:
+
+thisset = {"apple", "banana", "cherry"}
+
+print("banana" not in thisset)
+
+# Add an item to a set, using the add() method:
+
+thisset = {"apple", "banana", "cherry"}
+
+thisset.add("orange")
+
+print(thisset)
+
+# Add an item to a set, using the add() method:
+
+thisset = {"apple", "banana", "cherry"}
+
+thisset.add("orange")
+
+print(thisset)
+
+# Remove "banana" by using the remove() method:
+
+thisset = {"apple", "banana", "cherry"}
+
+thisset.remove("banana")
+
+print(thisset)
+
+
+# Loop through the set, and print the values:
+
+thisset = {"apple", "banana", "cherry"}
+
+for x in thisset:
+  print(x)
+
+# Join set1 and set2 into a new set:
+
+set1 = {"a", "b", "c"}
+set2 = {1, 2, 3}
+
+set3 = set1.union(set2)
+print(set3)
+
+
+# Use | to join two sets:
+
+set1 = {"a", "b", "c"}
+set2 = {1, 2, 3}
+
+set3 = set1 | set2
+print(set3)
+
+
+# Dictionaries are used to store data values in key:value pairs.
+
+# A dictionary is a collection which is ordered*, changeable and do not allow duplicates.
+
+
+# Duplicate values will overwrite existing values:
+
+thisdict = {
+  "brand": "Ford",
+  "model": "Mustang",
+  "year": 1964,
+  "year": 2020
+}
+print(thisdict)
+
+# The values in dictionary items can be of any data type:
+
+# String, int, boolean, and list data types:
+
+thisdict_2 = {
+  "brand": "Ford",
+  "electric": False,
+  "year": 1964,
+  "colors": ["red", "white", "blue"]
+}
+
+print(thisdict_2)
+
+
+# Get the value of the "model" key:
+
+thisdict = {
+  "brand": "Ford",
+  "model": "Mustang",
+  "year": 1964
+}
+x = thisdict["model"]
+# there is also another method call get()
+y = thisdict.get("model")
+z = thisdict.keys()
+print(x)
+print(y)
+print(z)
+
+# Add a new item to the original dictionary, and see that the keys list gets updated as well:
+
+car = {
+"brand": "Ford",
+"model": "Mustang",
+"year": 1964
+}
+
+x = car.keys()
+
+print(x) #before the change
+
+car["color"] = "white"
+
+print(x) #after the chang
+print(car)
+
+
+# Change the "year" to 2018:
+
+thisdict = {
+  "brand": "Ford",
+  "model": "Mustang",
+  "year": 1964
+}
+thisdict["year"] = 2018
+
+# Add a color item to the dictionary by using the update() method:
+
+thisdict = {
+  "brand": "Ford",
+  "model": "Mustang",
+  "year": 1964
+}
+thisdict.update({"color": "red"})
+
+# The pop() method removes the item with the specified key name:
+
+thisdict = {
+  "brand": "Ford",
+  "model": "Mustang",
+  "year": 1964
+}
+thisdict.pop("model")
+print(thisdict)
+
+# The popitem() method removes the last inserted item (in versions before 3.7, a random item is removed instead):
+
+thisdict = {
+  "brand": "Ford",
+  "model": "Mustang",
+  "year": 1964
+}
+thisdict.popitem()
+print(thisdict)
+
+
+# The clear() method empties the dictionary:
+
+# thisdict = {
+#   "brand": "Ford",
+#   "model": "Mustang",
+#   "year": 1964
+# }
+# thisdict.clear()
+# print(thisdict)
+
+# also you can loop in a dict
+
+thisdict =	{
+  "brand": "Ford",
+  "model": "Mustang",
+  "year": 1964
+}
+thisdict["color"] = "orange"
+for x in thisdict:
+  print(x)
+
+# A dictionary can contain dictionaries, this is called nested dictionaries.
+myfamily = {
+  "child1" : {
+    "name" : "Emil",
+    "year" : 2004
+  },
+  "child2" : {
+    "name" : "Tobias",
+    "year" : 2007
+  },
+  "child3" : {
+    "name" : "Linus",
+    "year" : 2011
+  }
+}
+
+# or 
+
+child1 = {
+  "name" : "Emil",
+  "year" : 2004
+}
+child2 = {
+  "name" : "Tobias",
+  "year" : 2007
+}
+child3 = {
+  "name" : "Linus",
+  "year" : 2011
+}
+
+myfamily = {
+  "child1" : child1,
+  "child2" : child2,
+  "child3" : child3
+}
+
+# To access items from a nested dictionary, you use the name of the dictionaries, starting with the outer dictionary:
+
+# Print the name of child 2:
+
+print(myfamily["child2"]["name"])
+
+for x, obj in myfamily.items():
+    print(x)
+    for y in obj:
+        print(y + ':', obj[y])
