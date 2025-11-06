@@ -649,7 +649,7 @@ else:
   print("b is not greater than a")
 
 
-# Checking even or odd numbers:
+# Checking if the number  even or odd numbers:
 
 number = 7
 
