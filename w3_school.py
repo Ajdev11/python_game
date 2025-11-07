@@ -67,6 +67,7 @@ my_name_is = 'Moses Ogunsemore'
 # random function 
 
 
+from gc import get_referents
 import random
 import this
 
@@ -791,8 +792,9 @@ match day:
 # while loops
 # for loops
 # The while Loop
-# With the while loop we can execute a set of statements as long as a condition is true.
 
+
+# With the while loop we can execute a set of statements as long as a condition is true.
 
 i = 1
 
@@ -809,3 +811,79 @@ while i < 6:
     if i == 3:
         break
     i += 1
+
+# Print a message once the condition is false:
+
+i = 1
+while i < 6:
+  print(i)
+  i += 1
+else:
+  print("i is no longer less than 6")
+
+
+# A for loop is used for iterating over a sequence (that is either a list, a tuple, a dictionary, a set, or a string)
+
+name_of_fruits = ["Apples", "Banana", "Mango", "Watermelon"]
+animals = ("Lion", "Goats", "Momkeys")
+cars = {"Benz", "Range"}
+family = {"name": "Moses", "Age": 20}
+
+print(type(name_of_fruits))
+print(type(animals))
+print(type(cars))
+print(type(family))
+
+for names in name_of_fruits:
+    print(f"the name of this fruit is {names}")
+
+
+# Exit the loop when x is "banana":
+
+fruits = ["apple", "banana", "cherry"]
+for x in fruits:
+  print(x)
+  if x == "banana":
+    break
+
+# Using the start parameter:
+
+for x in range(2, 6):
+  print(x)
+
+
+
+# Functions 
+
+# A function is a block of code which only runs when it is called.
+
+# A function can return data as a result.
+
+# A function helps avoiding code repetition.
+
+
+# In Python, a function is defined using the def keyword, followed by a function name and parentheses:
+
+def greet():
+  print("Hello from a function")
+
+
+greet()
+greet()
+
+# using param with a funct
+
+def fahreheit_celsius(fahren):
+    return(fahren - 32) * 5/9
+
+print(fahreheit_celsius(45))
+print(fahreheit_celsius(95))
+print(fahreheit_celsius(475))
+
+
+
+def salutation():
+    return "Hello Aj, return is used to exit a funct and give result"
+
+greets = salutation()
+print(greets)
