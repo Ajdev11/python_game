@@ -871,7 +871,7 @@ def greet():
 greet()
 greet()
 
-# using param with a funct
+# using param with a function
 
 def fahreheit_celsius(fahren):
     return(fahren - 32) * 5/9
