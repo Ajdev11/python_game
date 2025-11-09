@@ -909,3 +909,119 @@ funct_name("Anjorin")
 # A parameter is the variable listed inside the parentheses in the function definition.
 
 # An argument is the actual value that is sent to the function when it is called.
+
+
+# This function expects 2 arguments, and gets 2 arguments::
+
+def my_function(fname, lname):
+  print(fname + " " + lname)
+
+my_function("Emil", "Refsnes")
+
+
+# You can assign default values to parameters. If the function is called without an argument, it uses the default value:
+
+# Example
+
+def my_function(name = "friend"):
+  print("Hello", name)
+
+my_function("Emil")
+my_function("Tobias")
+my_function()
+my_function("Linus")
+
+
+# Sending a list as an argument:
+
+def my_fruits(fruits):
+    for fruit in fruits:
+        print(fruit)
+
+
+list_of_fruit = ["Mangoes", "apples"]
+my_fruits(list_of_fruit)
+
+
+def addNum(x, y):
+    return (x + y)
+
+result = addNum(10, 10)
+print(result)
+
+
+# Using *args to accept any number of arguments:
+
+def my_function(*kids):
+  print("The youngest child is " + kids[2])
+
+my_function("Emil", "Tobias", "Linus")
+
+
+
+# What is *args?
+# The *args parameter allows a function to accept any number of positional arguments.
+
+# Inside the function, args becomes a tuple containing all the passed arguments:
+
+# Accessing individual arguments from *args:
+
+def my_function(*args):
+  print("Type:", type(args))
+  print("First argument:", args[0])
+  print("Second argument:", args[1])
+  print("All arguments:", args)
+
+my_function("Emil", "Tobias", "Linus")
+
+
+# anotherpractical examples
+
+
+def my_funct(*numbers):
+    total = 0
+    for num in numbers:
+        total += num
+    return total
+
+
+print(my_funct(900, 80))
+print(my_funct(1, 4))
+
+
+
+# A lambda function is a small anonymous function.
+
+# A lambda function can take any number of arguments, but can only have one expression.
+
+
+# Multiply argument a with argument b and return the result:
+
+x = lambda a, b : a * b
+print(x(5, 6))
+
+
+# Summarize argument a, b, and c and return the result:
+
+x = lambda a, b, c : a + b + c
+print(x(5, 6, 2))
+
+
+
+# Recursion is when a function calls itself.
+
+# Recursion is a common mathematical and programming concept. It means that a function calls itself. This has the benefit of meaning that you can loop through data to reach a result
+
+
+# A simple recursive function that counts down from 5:
+
+def countdown(n):
+    # base case
+  if n <= 0:
+    print("Done!")
+  else:
+    # recursive case
+    print(n)
+    countdown(n - 1)
+
+countdown(5)
