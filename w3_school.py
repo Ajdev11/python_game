@@ -1053,3 +1053,10 @@ fav_1 = input("your favorite animal?")
 fav_2 = input("your best club?")
 
 print(f"{name} welcome to our world and it nice to see that you like {fav_1} and i also enjoy like {fav_2}")
+
+
+# OOP stands for Object-Oriented Programming.
+
+# Python is an object-oriented language, allowing you to structure your code using classes and objects for better organization and reusability.
+
+# Classes and objects are the two core concepts in object-oriented programming
